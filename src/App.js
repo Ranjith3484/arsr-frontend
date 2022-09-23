@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import Router from './components/router';
 import './App.css';
+import { Backdrop, CircularProgress } from '@mui/material';
+import React from 'react';
+import {  useSelector } from 'react-redux';
 
 function App() {
+  const loading =  useSelector((state)=>state.loading)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className='page-wrapper'>
+        <Router />
+        <Backdrop
+          sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+          open={loading}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <CircularProgress color="inherit" />
+        </Backdrop>
+      </div>
   );
 }
 

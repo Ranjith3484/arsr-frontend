@@ -1,0 +1,25 @@
+.add-employee{
+    display: flex;
+    float:right;
+    max-height:30px !important;
+}
+
+.modal-popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    align-items: center;
+}
+
+.input-field-guide-text{
+    font-size:9px !important;
+    margin:0px !important;
+    margin-left:20px !important;
+    margin-top: -5px !important;
+}

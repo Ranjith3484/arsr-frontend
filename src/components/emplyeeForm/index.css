@@ -1,0 +1,37 @@
+.form-wrapper{
+    display:flex;
+    flex-direction: column;
+    width:30% !important;
+}
+
+.input-field{
+    margin:10px !important;
+    border:1px solid grey;
+    height:30px;
+    border-radius:4px;
+    padding-left:5px !important;
+    font-size:15px !important;
+    width:300px !important;
+}
+
+.input-field-disabled{
+    appearance: none  !important;
+    background-color: transparent !important;
+    border: none  !important;
+    margin:10px !important;
+    height:30px;
+    padding-left:5px !important;
+    font-size:15px !important;
+    color:black
+}
+
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    max-width:315px;
+}
+
+.form-button{
+    width:100px;
+}
